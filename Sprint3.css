@@ -1,0 +1,362 @@
+body {
+  margin: 0px;
+  font-family: "Space Grotesk", sans-serif;
+  background-image: url("./imágenes/bg-main-desktop.png");
+  background-repeat: repeat-y;
+}
+html {
+  max-width: 1440px;
+}
+
+.background__img {
+  background-repeat: repeat-x;
+}
+
+/* ------------Cards------------ */
+
+.conteiner {
+  display: flex;
+  margin-top: 160px;
+  margin-left: 100px;
+}
+.cards {
+  position: absolute;
+  top: 15%;
+  right: 70%;
+  left: 100px;
+}
+
+.cards__front {
+  width: 447px;
+  height: 245px;
+}
+
+.cards__back {
+  position: absolute;
+  width: 447px;
+  height: 271px;
+  top: 340px;
+  left: 100px;
+}
+.text__fornt-card {
+  position: absolute;
+  bottom: 110px;
+  left: 40px;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 32px;
+  min-width: 375px;
+}
+.text__fornt-card-name {
+  display: flex;
+  position: relative;
+  bottom: 85px;
+  left: 40px;
+  font-weight: lighter;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+.text__fornt-card-date {
+  position: relative;
+  bottom: 105px;
+  left: 360px;
+  font-weight: lighter;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+.text__back-card-cvv {
+  position: relative;
+  bottom: 139px;
+  left: 340px;
+  letter-spacing: 2px;
+  color: white;
+}
+#logo_card {
+  position: relative;
+  top: 80px;
+  left: 20px;
+  z-index: 9;
+}
+
+/*----------- FORM -----------*/
+
+.form {
+  margin-left: 600px;
+
+  z-index: 10;
+  width: 400px;
+}
+.formulario-tarjeta {
+  padding: 0px;
+  margin-top: 132px;
+  font-size: 13px;
+}
+.formulario-tarjeta label {
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin-bottom: 7px;
+}
+
+.grupo__inputs__nombre {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+.grupo__inputs__numero {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.grupo-inputs__btn {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+
+.grupo-ccv {
+  display: flex;
+  flex-direction: row;
+}
+
+.grupo-fecha {
+  display: flex;
+}
+
+.texto__form {
+  display: flex;
+  color: hsl(278, 68%, 11%);
+  font-size: 18px;
+}
+
+#text__cvv {
+  margin-left: 73px;
+}
+
+.flexinput {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ------OCULTAR---- */
+
+.ocultar {
+  display: none !important;
+}
+.gracias {
+  position: absolute;
+  top: 40%;
+  left: 775px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gracias p {
+  color: gray;
+  margin-top: 0px;
+}
+.gracias h1 {
+  margin-bottom: 10px;
+}
+
+/* ----------Buttons----------- */
+
+.div__btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+.btn-enviar {
+  width: 91%;
+  background-color: hsl(278, 68%, 11%);
+  color: white;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+/* --------INPUTS-CORRECTOS-------- */
+
+.grupo__inputs__nombre.ok input {
+  border-color: rgb(6, 208, 6);
+}
+.grupo__inputs__numero.ok input {
+  border-color: rgb(6, 208, 6);
+}
+.div__mes.ok input {
+  border-color: rgb(6, 208, 6);
+}
+.div__ano.ok input {
+  border-color: rgb(6, 208, 6);
+}
+.div__ccv.ok input {
+  border-color: rgb(6, 208, 6);
+}
+/*----*/
+
+/* --------INPUTS-ERRORS-------- */
+.grupo__inputs__nombre span {
+  display: none;
+  color: red;
+}
+.grupo__inputs__numero span {
+  display: none;
+  color: red;
+}
+.izq span {
+  display: none;
+  color: red;
+}
+.der span {
+  display: none;
+  color: red;
+}
+.grupo__inputs__nombre.error span {
+  display: block;
+}
+.grupo__inputs__nombre.error input {
+  border-color: red;
+}
+.grupo__inputs__numero.error span {
+  display: block;
+}
+.grupo__inputs__numero.error input {
+  border-color: red;
+}
+
+.div__mes.error input {
+  border-color: red;
+}
+
+.div__ano.error input {
+  border-color: red;
+}
+
+.div__ccv.error input {
+  border-color: red;
+}
+.div__ccv.error span {
+  display: block;
+}
+.izq.error span {
+  display: block;
+}
+.div__mes .error input {
+  border-color: red;
+}
+
+.der.error span {
+  display: block;
+}
+.der.error input {
+  border-color: red;
+}
+/* --------INPUTS----------- */
+
+input {
+  border-color: grey;
+  border-style: solid;
+  border-width: 1px;
+  padding: 12px;
+}
+#inputMMS {
+  margin-right: 10px;
+  width: 60px;
+  border-radius: 6px;
+}
+#inputYY {
+  margin-right: 20px;
+  width: 60px;
+  border-radius: 6px;
+}
+#inputCCV {
+  border-radius: 6px;
+  padding: 12px;
+  width: 84%;
+}
+#inputNombre {
+  border-radius: 6px;
+  padding: 12px;
+}
+#inputNumero {
+  border-radius: 6px;
+  padding: 12px;
+}
+#spanccv {
+  width: 150px;
+}
+
+/*------------- MOVIL------------- */
+
+@media screen and (max-width: 375px) {
+  body {
+    background-image: url("./imágenes/bg-main-mobile.png");
+    background-repeat: repeat-x;
+  }
+
+  /* -----cards------ */
+
+  .cards {
+    position: absolute;
+    top: 1%;
+    left: 3%;
+  }
+  .cards__front {
+    position: absolute;
+    top: 114px;
+    z-index: 2;
+    left: 82%;
+  }
+  .cards__back {
+    position: absolute;
+    top: 10px;
+    left: 149%;
+  }
+  .text__fornt-card {
+    bottom: 128px;
+    left: 20px;
+    font-size: 23px;
+  }
+  .text__fornt-card-name {
+    left: 22px;
+    font-size: 12px;
+    bottom: 39px;
+  }
+  .text__fornt-card-date {
+    bottom: 61px;
+    left: 245px;
+    font-size: 12px;
+  }
+  .text__back-card-cvv {
+    bottom: 82px;
+    left: -79px;
+  }
+  #logo_card {
+    top: 125px;
+    left: 91%;
+  }
+  img {
+    width: 320px;
+  }
+
+  /* ---FORM---- */
+
+  .formulario-tarjeta {
+    position: absolute;
+    top: 30%;
+    left: 18%;
+    margin-top: 30%;
+    width: 450px;
+  }
+  .gracias {
+    position: absolute;
+    top: 53%;
+    width: 100%;
+    left: 100px;
+  }
+  #inputCCV {
+    width: 94%;
+  }
+}

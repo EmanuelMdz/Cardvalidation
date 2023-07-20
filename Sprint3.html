@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Sprint3.css"> 
+    <link rel="shortcut icon" href="./imágenes/favicon-32x32.png" type="image/x-icon">
+
+    <!-- letras -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">    
+<title>Sprint3</title>
+</head>
+
+
+
+<body>
+
+<div class="conteiner">
+    
+    <div class="cards">
+    
+        <svg id="logo_card" width="84" height="47" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff"/><path d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z" stroke="#fff"/></svg>
+            
+            <div class="cards__front">
+        
+                <img src="./imágenes/bg-card-front.png" alt="">
+                <span id ="number__card"class="text__fornt-card">1234 5678  9123 0000</span>
+                <span id="name__card" class="text__fornt-card-name">Jane Aplleseed</span>
+                <span id ="datemm__card" class="text__fornt-card-date">01/</span>
+                <span id ="dateyy__card" class="text__fornt-card-date">12</span>
+            
+            </div>
+        
+            <div class="cards__back">
+
+                <img src="./imágenes/bg-card-back.png" alt="">
+                <span id ="ccv__card"class="text__back-card-cvv">123</span>
+
+            </div>
+
+    </div>
+
+
+    <div class="form" id="form1" >
+    
+        <form action=""  id="formulario" class="formulario-tarjeta">
+
+                <div class="grupo__inputs__nombre" id="grupo__inputs__nombreid">
+
+                    <label class="texto__form" for="inputNombre">CARDHOLDER NAME</label>
+                        <input type="text" id="inputNombre" name="nombre1" placeholder="e.g. Jane Aplleseed" >
+                    <span>Wrong Name, letters only</span>
+
+                </div>
+
+                <div class="grupo__inputs__numero"id="grupo__inputs__numeroid">
+
+                    <label class="texto__form" for="inputNumero">CARD NUMBER</label>
+                        <input type="text" id="inputNumero" name="numero1" maxlength="16" placeholder="e.g 1234 5678 9123 0000">
+                    <span>Numbers only, 16 characters</span>
+
+                </div>
+            <div class="grupo-inputs__btn">
+
+                <div class="izq " id="text__yminput">
+
+                    <div class="texto__form">
+                        <label for="inputMMS"> EXP. DATE (MM/YY) </label>   
+                    </div>
+
+                    <div class="flexinput">
+
+                        <div class="grupo-fecha">
+
+                            <div class="div__mes"id="grupo__inputs__mesid">
+                                <input type="text" name="mes1" id="inputMMS" maxlength="2"placeholder="MM">
+                            </div>
+
+                            <div class="div__ano"id="grupo__inputs__anoid">
+                                <input type="text" name="ano1" id="inputYY" maxlength="2"placeholder="YY">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <span id="spanym">Can´t be blank</span>
+                    </div>
+
+                </div>
+
+                    <div class="der" id="input__ccv">
+
+                        <div class="texto__form">
+                            <label id="ccv__card" for="inputCCV"> CCV </label>   
+                        </div>
+
+                        <div class="div__ccv" id="div__ccv__id">  
+
+                            <div >
+                                <input type="text" name="ccv1" id="inputCCV" maxlength="3" placeholder="e.j. 123">
+                            </div>
+
+                            <div>
+                                <span id="spanccv">Can´t be blank</span>
+                            </div>
+
+                        </div>
+                </div>  
+
+            </div>
+
+                    <div class="div__btn">
+                        <button type="submit" id="btn" class="btn-enviar">Confirm</button>
+                    </div>
+                
+
+        </form>
+        
+
+
+</div>
+
+
+<div id="gracias1" class="gracias ocultar" >
+    <svg width="80" height="80" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="url(#a)"/><path d="M28 39.92 36.08 48l16-16" stroke="#fff" stroke-width="3"/><defs><linearGradient id="a" x1="-23.014" y1="11.507" x2="0" y2="91.507" gradientUnits="userSpaceOnUse"><stop stop-color="#6348FE"/><stop offset="1" stop-color="#610595"/></linearGradient></defs></svg>
+    <h1>THANK YOU!</h1>
+    <p>We´ve added your card details</p>
+    <button type="submit" id="refresh" class="btn-enviar">Confirm</button>
+
+</div>
+    <script  src="./Sprint3.js" ></script>
+</body>
+</html>
+

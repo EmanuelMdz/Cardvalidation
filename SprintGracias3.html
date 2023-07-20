@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Sprint2.css"> 
+    <link rel="shortcut icon" href="./imágenes/favicon-32x32.png" type="image/x-icon">
+    <!-- letras -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">    
+<title>Sprint2</title>
+</head>
+
+
+
+<body>
+
+<div class="conteiner">
+    
+    <div class="cards">
+    
+        <svg id="logo_card" width="84" height="47" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff"/><path d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z" stroke="#fff"/></svg>
+            
+            <div class="cards__front">       
+                <img src="/Sprints/Sprint 2/imágenes/bg-card-front.png" alt="">
+                <span class="text__fornt-card">9591 6489 6389 101E</span>
+                <span class="text__fornt-card-name">FELICIA LEIRE</span>
+                <span class="text__fornt-card-date">09/00</span>     
+            </div>
+        
+            <div class="cards__back">
+                <img src="/Sprints/Sprint 2/imágenes/bg-card-back.png" alt="">
+                <span class="text__back-card-cvv">123</span>
+            </div>
+
+    </div>
+
+<!-- para ocultarlo poner ID="ocultar" -->
+    <div class="form " id="ocultar" >
+    
+        <form action="" class="formulario-tarjeta">
+            <!-- Para mostrar errores agregar la clase "error" despues de "grupo-inputs" -->
+            <div class="grupo-inputs error">
+                <label class="texto__form" for="inputNombre">CARDHOLDER NAME</label>
+                <input type="text" id="inputNombre"  placeholder="e.g. Jane Aplleseed" >
+                <span>Wrong Name, letters only</span>
+            </div>
+            <!-- Para mostrar errores agregar la clase "error" despues de "grupo-inputs" -->
+            <div class="grupo-inputs">
+                <label class="texto__form" for="inputNumero">CARD NUMBER</label>
+                <input type="text" id="inputNumero"  placeholder="e.g 1234 5678 9123 0000">
+                <span>Wrong format, numbers only</span>
+            </div>
+            
+
+            <div class="grupo-inputs__btn ">
+
+              <!-- Para mostrar errores agregar la clase "error" despues de "izq" -->              
+                <div class="izq error">
+
+                    <div class="texto__form">
+                        <label for="inputMMS"> EXP. DATE (MM/YY) </label>   
+                    </div>
+
+                    <div class="flexinput">
+                        <div class="grupo-fecha ">
+                            <input type="text" id="inputMMS" maxlength="2"placeholder="MM">
+                            <input type="text" id="inputYY" maxlength="2"placeholder="YY">
+                        </div>
+                    </div>
+
+                    <div>
+                        <span id="spanccv">Can´t be blank</span>
+                    </div>
+
+                </div>
+
+            <!-- Para mostrar errores agregar la clase "error" despues de "der"  -->
+                <div class="der ">
+
+                    <div class="texto__form">
+                        <label for="inputCCV"> CCV </label>   
+                    </div>
+
+                    <div>
+                        <input type="text" id="inputCCV" maxlength="3" placeholder="e.g. 123">
+                    </div>
+
+                    <div>
+                        <span id="spanccv">Can´t be blank</span>
+                    </div>
+
+                    </div>
+                        
+            </div>
+                <div class="div__btn">
+                    <button type="submit" id="btn" class="btn-enviar">Confirm</button>
+                </div>
+                
+
+        </form>
+        
+
+
+</div>
+
+<!-- para ocultarlo poner ID="ocultar" -->
+
+<div class="gracias" id="">
+    <svg width="80" height="80" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="url(#a)"/><path d="M28 39.92 36.08 48l16-16" stroke="#fff" stroke-width="3"/><defs><linearGradient id="a" x1="-23.014" y1="11.507" x2="0" y2="91.507" gradientUnits="userSpaceOnUse"><stop stop-color="#6348FE"/><stop offset="1" stop-color="#610595"/></linearGradient></defs></svg>
+    <h1>THANK YOU!</h1>
+    <p>We´ve added your card details</p>
+    <button onclick="confirm2()" type="submit" id="btn" class="btn-enviar">Confirm</button>
+
+</div>
+     <script  src="./Sprint2.js" ></script>
+</body>
+</html>
